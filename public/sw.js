@@ -4,13 +4,13 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll([
-        "/",
-        "/index.html",
-        "/favicon.png",
-        "/icon-128.png",
-        "/icon-256.png",
-        "/icon-512.png",
-        "/manifest.json"
+        "./",
+        "./index.html",
+        "./favicon.png",
+        "./icon-128.png",
+        "./icon-256.png",
+        "./icon-512.png",
+        "./manifest.json"
       ]).catch((err) => console.log("Failed to cache initial assets:", err));
     })
   );
