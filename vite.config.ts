@@ -9,6 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@orion/core": path.resolve(__dirname, "./src/core"),
+      "@tauri-apps/api/core": path.resolve(__dirname, "./src/core/tauri-mock.ts"),
     },
   },
   server: {

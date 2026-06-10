@@ -20,7 +20,8 @@
 
     "baseUrl": ".",
     "paths": {
-      "@orion/core": ["./src/core"]
+      "@orion/core": ["./src/core"],
+      "@tauri-apps/api/core": ["./src/core/tauri-mock.ts"]
     }
   },
   "include": ["src"],
